@@ -3,7 +3,7 @@ import { FaCloudSun } from "react-icons/fa";
 
 export default async function Home() {
   const data = await fetch(
-    'https://api.weatherapi.com/v1/forecast.json?key=c3a6dc4386cc49e7ba0155411242212&q=samarkand&days=14&aqi=yes&alerts=yes'
+    'https://api.weatherapi.com/v1/forecast.json?key=c3a6dc4386cc49e7ba0155411242212&q=tashkent&days=14&aqi=yes&alerts=yes'
   );
   const posts = await data.json();
   const currentWeather = posts?.current;
